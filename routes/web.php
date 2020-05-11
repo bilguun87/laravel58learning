@@ -28,3 +28,6 @@ Route::get('/localization-tutor-translate/{locale}', function($locale){
 	App::setLocale($locale);
 	return view('localization-tutor.translate');
 });
+Route::get('/github-test', function(){
+	return view('hello');
+});
